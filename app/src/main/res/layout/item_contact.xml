@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    >
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя контакта"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/contact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableStart="@drawable/ic_baseline_person"
+        android:drawablePadding="8dp"/>
+
+    <TextView
+        android:drawableStart="@drawable/ic_baseline_local_phone"
+        android:id="@+id/contact_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0222-36-66-00"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="@color/contact"
+        app:layout_constraintStart_toStartOf="@+id/contact_name"
+        app:layout_constraintTop_toBottomOf="@+id/contact_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
